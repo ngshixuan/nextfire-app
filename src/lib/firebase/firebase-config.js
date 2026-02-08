@@ -25,6 +25,7 @@ export const googleAuthProvider = new GoogleAuthProvider();
 export const db = getFirestore(app);
 export const storage = getStorage()
 
+
 export async function getUserWithUsername(username) {
     const q = query(
         collection(db, 'users'),
